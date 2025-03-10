@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://www.malachihernandez.com/sitemap.xml
