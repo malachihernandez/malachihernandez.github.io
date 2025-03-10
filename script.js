@@ -306,4 +306,27 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         document.querySelector('.main-nav a[href="#contact"]').click();
     });
+
+    function goToContact(interest) {
+        // First scroll to contact section
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        
+        // Wait a brief moment to ensure the form is in view and accessible
+        setTimeout(() => {
+            // Get the interest select element
+            const interestSelect = document.querySelector('select[name="entry.1103642755"]');
+            if (interestSelect) {
+                interestSelect.value = interest;
+            }
+        }, 100);
+    }
+
+    function setInterest(interest) {
+        setTimeout(() => {
+            const interestSelect = document.querySelector('select[name="entry.1103642755"]');
+            if (interestSelect) {
+                interestSelect.value = interest;
+            }
+        }, 100);
+    }
 }); 
